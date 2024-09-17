@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="new-container">
+        <div class="logo">
+          <img class="logo-png" src="/bookshelf.png" alt="" />
+          <h1>Book Library</h1>
+        </div>
+        <form class="book-form">
+          <div class="book-name-container container-input">
+            <label for="book-name">Book Name</label>
+            <input type="text" name="book-name" class="book-name" />
+          </div>
+
+          <div class="author-container container-input">
+            <label for="author">Author</label>
+            <input type="text" name="author" class="author" />
+          </div>
+          <div class="pages-container container-input">
+            <label for="pages">Pages</label>
+            <input type="text" name="pages" class="pages" />
+          </div>
+          <div class="read-container container-input">
+            <label for="read">Have you read this book?</label>
+            <select name="read" id="read">
+              <option value="">select option</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <button class="new-book">New Book</button>
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read?</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

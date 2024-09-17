@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", system-ui;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.logo-png {
+  width: 40px;
+  height: auto;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 30px;
+  width: 30vw;
+}
+.container-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+input {
+  padding: 8px;
+  margin-top: 8px;
+}
+table {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+select {
+  padding: 8px;
+  margin-top: 8px;
+}
+button {
+  padding: 8px;
+  margin-top: 20px;
+  width: 100%;
+}
+th {
+  /* padding: 50px; */
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid grey; */
+}
+.delete {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 800;
+}
+.td {
+  margin-top: 20px;
+}
+.alert-empty {
+  color: white;
+  background-color: red;
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
